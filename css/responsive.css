@@ -1,22 +1,25 @@
-@media screen and (max-width:1200px) {
-    .container {
-        width: 100;
-    }
-}
-
-
 @media screen and (max-width:768px) {
     .container {
         max-width: 720px;
     }
 
-    .nav-bar a {
+    .nav-bar {
         display: none;
     }
 
-    .nav-bar:after {
-        content: '\f0c9';
+    .fa-bars{
+        display: block;
+    }
+
+    .card-maxi{
+        flex-direction: column;
     }
 }
 
+@media  screen and (max-width: 576px) {
 
+    .row {
+        flex-direction: column;
+    }
+    
+}

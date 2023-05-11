@@ -14,12 +14,24 @@
     .card-maxi{
         flex-direction: column;
     }
+
+    .card-img img {
+        padding-top: 0;
+    }
+
+    .card-benefits {
+        flex-basis: calc(100% / 2 - 10px);
+    }
 }
 
 @media  screen and (max-width: 576px) {
 
     .row {
         flex-direction: column;
+    }
+
+    .card-benefits {
+        flex-basis: auto;  /*TESTARE DOPO AVER INSERITO IL CONTENUTO*/
     }
 
     /* TESTIMONIAL */

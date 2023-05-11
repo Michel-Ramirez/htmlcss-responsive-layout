@@ -25,10 +25,30 @@ a {
     color: white;
 }
 
+h2 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    padding: 20px 0;
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
 footer{
     background-color: #333333 ;
     height: 200px;
 }
+
+.btn {
+    padding: 10px 10px;
+    border-radius: 30px;
+}
+
 /* !UTILITY */
 
 .container {
@@ -41,9 +61,22 @@ footer{
     display: flex;
 }
 
+/* MARGIN BOTTOM */
+
 .mb-50 {
     margin-bottom: 50px;
 }
+
+/* PAGGING */
+
+.pad-b20 {
+    padding-bottom: 20px ;
+}
+
+.pad-b50 {
+    padding-bottom: 50px;
+}
+
 
 /* HEADER */
 
@@ -53,15 +86,10 @@ footer{
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    border: 2px dashed red;
-    background-color: tomato;
 }
 
 .img-logo {
     width: 100px;
-    height: 50px;
-    border: 2px dashed black;
-    background-color: aqua;
 }
 
 .fa-bars{
@@ -71,58 +99,108 @@ footer{
 
 
 .nav-bar a {
-    padding: 0 20px;
-    border: 2px dashed black;
-    background-color: aqua;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+}
+
+.btn-start {
+    background-color: white;
+    color: black;
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 /* !MAIN */
 
 /* CARD */
 
-
 .row {
     margin-top: 50px;
-    display: flex;
     flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card, .card-maxi {
+    background-color: #B5DDFF;
+    border-radius: 20px;
+
+}
+.card-maxi{
+    flex-basis: calc(68% - 40px);
+}
+
+.card-img img{
+    max-height: 350px;
+    display: block;
+    padding-right: 100px;
+    padding-top: 50px;
+}
+
+.card-maxi .content {
+    padding: 30px 20px;
+}
+
+.content h4{
+    color: #0084FD;
+}
+
+.card-img {
+    max-width: 40%;
+}
+
+.content p, .card p {
+    font-weight: 600;
+    color: #4c566a;
+    line-height: 2rem;
+}
+
+.btn-dl-app {
+    background-color: #0084FD;
+    display: inline-block;
+    font-size: 1.1rem;
+    letter-spacing: 4px;
+    font-weight: 600;
+    padding: 10px 50px;
+    margin-bottom: 20px;
+}
+
+.fa-apple{
+    padding-right: 5px;
 }
 
 .card {
-    flex-basis: calc(100% / 3);
-    height: 400px;
-    border: 2px dashed black;
-    background-color: #B5DDFF;
-}
-
-/* CARD MAXI */
-
-.card-img, .content {
-    flex-basis: 50% ;
-    height: 400px;
-    border: 1px dashed black;
-    background-color: bisque;
-}
-
-.card-maxi{
-    flex-basis: 66.6%;
-    height: 400px;
-    border: 2px dashed red;
-    background-color: #B5DDFF;
-    display: flex;
+    flex-basis: calc(100% / 3 - 20px);
+    text-align: center;
+    padding: 25px;
+    color: #0084FD;
 }
 
 /* SECTION JUMBOTRON */
 
 section.jumbotron {
-    background-color: #9792E4;   
+    background-color: #9792E4;
 }
 
 .container-jumbotron {
-    height: 800px;
     min-width: calc(100% / 2);
-    background-color: brown;
     border: 2px dashed black;
     display: inline-block;
+    color: white;
+    padding: 50px;
+    /* font-size: 1.5rem; */
+}
+
+.container-jumbotron img {
+    max-height: 500px;
+    padding: 50px;
+}
+
+.testimonial h2 {
+    color: #9792E4;
+}
+
+.testimonial p {
+    font-size: 1.2rem;
 }
 
 /* TESTIMONIAL */
@@ -132,8 +210,6 @@ section.jumbotron {
 }
 
 .card-testimonial {
-    height: 200px;
-    width: 100%;
     background-color: #9792E4;
     border: 2px dashed black;
     border-radius: 50px;
@@ -151,29 +227,53 @@ section.jumbotron {
     height: 150px;
     flex-basis: 600px;
     border: 1px dashed black;
-
 }
-
-
-
 
 /* SECTION BENEFITS */
 
 section.benefits{
     background-color: #9792E4;
     padding-bottom: 50px;
+    text-align: center;
 }
 
 .benefits .row {
     gap: 20px;
 }
 
-
 .card-benefits {
-    flex-basis: calc(100% / 3 - 20px);
-    height: 200px;
-    border: 2px dashed black;
+    flex-basis: calc(100% / 3 - 15px);
     background-color: white;
+    border-radius: 20px;
+    text-align: start;
+    padding: 20px;
+}
+
+.benefits h2 {
+    color: white;
+}
+
+.card-benefits h4 {
+    color: #9792E4;
+}
+
+.number {
+    font-size: 5rem;
+    color: #9792E4;
+    font-weight: 800;
+}
+
+.btn-more {
+    background-color: #9792E4;
+    display: inline-block;
+    font-weight: 600;
+    padding: 10px 40px;
+    letter-spacing: 5px;
+    margin: 20px 0;   
+}
+
+.card-benefits p {
+    line-height: 2rem;
 }
 
 /* SECTION ABOUT US */

@@ -24,6 +24,11 @@ a {
     text-decoration: none;
     color: white;
 }
+
+footer{
+    background-color: #333333 ;
+    height: 200px;
+}
 /* !UTILITY */
 
 .container {
@@ -135,6 +140,23 @@ section.jumbotron {
     margin-bottom: 20px;
 }
 
+.container-img-testimonial {
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.review-testimonial {
+    height: 150px;
+    flex-basis: 600px;
+    border: 1px dashed black;
+
+}
+
+
+
+
 /* SECTION BENEFITS */
 
 section.benefits{
@@ -155,4 +177,34 @@ section.benefits{
 }
 
 /* SECTION ABOUT US */
+
+.content-about-us{
+    flex-basis: 70%;
+    height: 400px;
+    border: 2px dashed black;
+}
+
+.img-about-us{
+    flex-basis: 30%;
+    height: 400px;
+    border: 2px dashed black;
+}
+
+/* SECTION GETSTARTED */
+
+section.started{
+    background-color: #9792E4;
+}
+
+.content-started {
+    height: 400px;
+    width: 300px;
+    border: 2px dashed black;
+}
+
+.started .container{
+    justify-content: center;
+}
+
+/* !FOOTER */
 

@@ -21,5 +21,13 @@
     .row {
         flex-direction: column;
     }
-    
+
+    /* TESTIMONIAL */
+
+    .card-testimonial{
+        flex-direction: column;
+    }
+
+
+
 }

@@ -1,0 +1,22 @@
+@media screen and (max-width:1200px) {
+    .container {
+        width: 100;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .nav-bar a {
+        display: none;
+    }
+
+    .nav-bar:after {
+        content: '\f0c9';
+    }
+}
+
+

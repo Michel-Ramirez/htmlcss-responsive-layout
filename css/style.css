@@ -117,7 +117,8 @@ footer{
 .row {
     margin-top: 50px;
     flex-wrap: wrap;
-    gap: 20px;
+    margin: -20px;
+    margin-top: 50px;
 }
 
 .card, .card-maxi {
@@ -126,27 +127,26 @@ footer{
 
 }
 .card-maxi{
-    flex-basis: calc(68% - 40px);
+    flex-basis: calc(100% / 3 * 2 - 20px);
+    margin: 10px;
 }
 
-.card-img img{
-    max-height: 350px;
+.card-maxi img{
+    max-height: 410px;
     display: block;
     padding-right: 100px;
     padding-top: 50px;
 }
 
 .card-maxi .content {
-    padding: 30px 20px;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
 .content h4{
     color: #0084FD;
 }
 
-.card-img {
-    max-width: 40%;
-}
 
 .content p, .card p {
     font-weight: 600;
@@ -173,6 +173,8 @@ footer{
     text-align: center;
     padding: 25px;
     color: #0084FD;
+    margin: 10px;
+
 }
 
 /* SECTION JUMBOTRON */
